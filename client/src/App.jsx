@@ -16,7 +16,7 @@ function App() {
       const response = await axios.get("http://localhost:3000/todos");
       setTodos(response.data.data);
     } catch (error) {
-      console.log("you fucked up!", error);
+      console.log("Error while fetching from backend: ", error);
     }
   };
 
